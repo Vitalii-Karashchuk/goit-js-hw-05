@@ -1,7 +1,6 @@
 const sortByDescendingFriendCount = (users) => {
-const friendLength = users.map(user => user.friends);
-console.log(friendLength);
-return friendLength.toSorted((a, b) => b.localeCompare(a));
+return users.toSorted((firstFriend, secondFriend) => secondFriend.friends.length - firstFriend.friends.length);
+
 };
 
 
